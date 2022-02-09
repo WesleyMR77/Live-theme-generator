@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Gerador de nome para live IBNA</h1>
+    <div>
+        <h2>Lives Convencionais</h2>
+        <div>
+            <label>Nome</label>
+            <input type="text" id="name-conventional">
+            <label>É Celebração?</label>
+            <input type="radio" id="checkCelebration-conventional" name="opt-conventional">
+            <label>É Celebra Link?</label>
+            <input type="radio" id="checkCelebrationLink-conventional" name="opt-conventional">
+            <button onclick="liveConventional()">Validar</button>
+            <label id="result-conventional"></label>
+        </div>
+    </div>
+    <div>
+        <h2>Lives Cortes</h2>
+        <div>
+            <label>Nome</label>
+            <input type="text" id="name-cut">
+            <label>Mensagem</label>
+            <input type="text" id="message-cut">
+            <button onclick="liveCut()">Validar</button>
+            <label id="result-cut"></label>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Séries</h2>
+        <div>
+            <label>Nome</label>
+            <input type="text" id="name-series">
+            <label>Mensagem</label>
+            <input type="text" id="message-series">
+            <select name="select" id="series-opt">
+                <!-- <option value="series1">Série</option> -->
+                <option id="" value="series2" selected>Os nove hábitos do fruto do espírito</option>
+              </select>
+              <label>É Corte?</label>
+              <input type="checkbox" id="check-series" name="opt1-series">
+              <button onclick="liveSeries()">Validar</button>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Personalizado</h2>
+        <div>
+            <label>Nome</label>
+            <input type="text" id="name-customizing">
+            <label>Mensagem</label>
+            <input type="text" id="message-customizing">
+
+            <label>É Celebração?</label>
+            <input type="radio" id="checkCelebration-conventional" name="opt1-customizing">
+
+            <label>É Celebra Link?</label>
+            <input type="radio" id="checkCelebrationLink-conventional" name="opt1-customizing">
+
+            <label>É Ceia?</label>
+            <input type="radio" id="checkCelebration-conventional" name="opt2-customizing">
+
+            <label>É Batismo?</label>
+            <input type="radio" id="checkCelebrationLink-conventional" name="opt3-customizing">
+
+            <label>É Conferência?</label>
+            <input type="radio" id="checkCelebration-conventional" name="opt4-customizing">
+            <label>Mensagem</label>
+            <input type="text" id="message-customizing">
+
+            <label>É Cantata de natal?</label>
+            <input type="radio" id="checkCelebrationLink-conventional" name="opt4-customizing">
+            <label>Qual título?</label>
+            <input type="text" id="message-customizing">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
