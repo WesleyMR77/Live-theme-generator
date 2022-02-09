@@ -34,18 +34,17 @@ function liveSeries(){
     const select = document.getElementById("series-opt");
     const serie = select.options[select.selectedIndex].text;
 
-    // result = (message + " - " + "SÉRIE " + serie + " - " + name + " | CELEBRA LINK")
     const checkSeriesCut = document.getElementById("check-series").checked;
+    
     if(checkSeriesCut === false){
-        const result = ("SÉRIE " + serie + " | " + date + " - 19H | " +  name)
+        const date = getDate()
+        result = ("SÉRIE " + serie + " | " + date + " - 19H | " +  name)
+    }
+    if(checkSeriesCut === true){
+        result = ("SÉRIE " + serie + " - " + message + " | " +  name)
     }
     
-    const date = getDate()
 
-    
-
-
-    //const result = ("SÉRIE " + serie + " - " + message + " | " +  name)
 
     getResult(result)
 }
