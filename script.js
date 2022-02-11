@@ -80,7 +80,7 @@ function liveCustomizing(){
             }
         }
         if( christmas === true){
-            result = ("CANTATA DE NATAL IBNA + " + year + " | " + message +" | "+ message + " - " + time)  
+            result = ("CANTATA DE NATAL IBNA " + year + " | " + message +" | "+ message + " - " + time)  
         }
 
 
