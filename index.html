@@ -13,87 +13,93 @@
 <body>
     <h1>Gerador de nome para live IBNA</h1>
     <!-- LIVES CONVENCIONAIS -->
-    <div>
-        <h2>Lives Convencionais</h2>
-        <div>
-            <label>Nome</label>
-            <input type="text" id="name-conventional">
-            <label>É Celebração?</label>
-            <input type="radio" id="check-celebration-conventional" name="opt-conventional">
-            <label>É Celebra Link?</label>
-            <input type="radio" id="check-celebrationlink-conventional" name="opt-conventional">
-            <button onclick="liveConventional()">Validar</button>
-            <label id="result-conventional"></label>
+    <main>
+        <div class="line">
+            <div class="counteiner-convencional">
+                <h2>Lives Convencionais</h2>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" id="name-conventional">
+                    <label>É Celebração?</label>
+                    <input type="radio" id="check-celebration-conventional" name="opt-conventional">
+                    <label>É Celebra Link?</label>
+                    <input type="radio" id="check-celebrationlink-conventional" name="opt-conventional">
+                    <button onclick="liveConventional()">Validar</button>
+                    <label id="result-conventional"></label>
+                </div>
+            </div>
+            <div>
+                <h2>Lives Cortes</h2>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" id="name-cut">
+                    <label>Mensagem</label>
+                    <input type="text" id="message-cut">
+                    <button onclick="liveCut()">Validar</button>
+                    <label id="result-cut"></label>
+
+                </div>
+            </div>
         </div>
-    </div>
-    <div>
-        <h2>Lives Cortes</h2>
-        <div>
-            <label>Nome</label>
-            <input type="text" id="name-cut">
-            <label>Mensagem</label>
-            <input type="text" id="message-cut">
-            <button onclick="liveCut()">Validar</button>
-            <label id="result-cut"></label>
-
-        </div>
-    </div>
-
-    <!-- LIVES CORTES -->
-    <div>
-        <h2>Séries</h2>
-        <div>
-            <label>Nome</label>
-            <input type="text" id="name-series">
-            <label>Mensagem</label>
-            <input type="text" id="message-series">
-            <select name="select" id="series-opt">
-                <!-- <option value="series1">Série</option> -->
-                <option id="" value="series2" selected>Os nove hábitos do fruto do espírito</option>
-              </select>
-              <label>É Corte?</label>
-              <input type="checkbox" id="check-series" name="opt1-series">
-              <button onclick="liveSeries()">Validar</button>
-
-        </div>
-    </div>
-    
-    <!-- LIVES SÉRIES -->
-    <div>
-        <h2>Personalizado</h2>
-        <div>
-            <label>Nome</label>
-            <input type="text" id="name-customizing">
-            <label>Mensagem</label>
-            <input type="text" id="message-customizing">
-
-            <label>É Celebração?</label>
-            <input type="radio" id="check-celebration-customizing" name="opt1-customizing">
-
-            <label>É Celebra Link?</label>
-            <input type="radio" id="check-celebrationlink-customizing" name="opt1-customizing">
    
-            <label>As 18:00?</label>
-            <input type="radio" id="check-18-customizing" name="opt-time-customizing">
+            <!-- LIVES CORTES -->
+            <div class="line">
+                <div>
+                    <h2>Séries</h2>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" id="name-series">
+                        <label>Mensagem</label>
+                        <input type="text" id="message-series">
+                        <select name="select" id="series-opt">
+                            <!-- <option value="series1">Série</option> -->
+                            <option id="" value="series2" selected>Os nove hábitos do fruto do espírito</option>
+                        </select>
+                        <label>É Corte?</label>
+                        <input type="checkbox" id="check-series" name="opt1-series">
+                        <button onclick="liveSeries()">Validar</button>
 
-            <label>As 19:00?</label>
-            <input type="radio" id="check-19-customizing" name="opt-time-customizing">
+                    </div>
+                </div>
 
-            <label>É Ceia?</label>
-            <input type="radio" id="check-supper-customizing" name="opt2-customizing">
+                <!-- LIVES SÉRIES -->
+                <div>
+                    <h2>Personalizado</h2>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" id="name-customizing">
+                        <label>Mensagem</label>
+                        <input type="text" id="message-customizing">
 
-            <label>É Batismo?</label>
-            <input type="radio" id="check-baptism-customizing" name="opt3-customizing">
+                        <label>É Celebração?</label>
+                        <input type="radio" id="check-celebration-customizing" name="opt1-customizing">
 
-            <label>É Conferência?</label>
-            <input type="radio" id="check-conference-customizing" name="opt4-customizing">
+                        <label>É Celebra Link?</label>
+                        <input type="radio" id="check-celebrationlink-customizing" name="opt1-customizing">
 
-            <label>É Cantata de natal?</label>
-            <input type="radio" id="check-christmas-customizing" name="opt2-customizing">
- 
-            <button onclick="liveCustomizing()">Validar</button>
-        </div>
-    </div>
+                        <label>As 18:00?</label>
+                        <input type="radio" id="check-18-customizing" name="opt-time-customizing">
+
+                        <label>As 19:00?</label>
+                        <input type="radio" id="check-19-customizing" name="opt-time-customizing">
+
+                        <label>É Ceia?</label>
+                        <input type="radio" id="check-supper-customizing" name="opt2-customizing">
+
+                        <label>É Batismo?</label>
+                        <input type="radio" id="check-baptism-customizing" name="opt3-customizing">
+
+                        <label>É Conferência?</label>
+                        <input type="radio" id="check-conference-customizing" name="opt4-customizing">
+
+                        <label>É Cantata de natal?</label>
+                        <input type="radio" id="check-christmas-customizing" name="opt2-customizing">
+
+                        <button onclick="liveCustomizing()">Validar</button>
+                    </div>
+                </div>
+            </div>
+    </main>
 
 
 
