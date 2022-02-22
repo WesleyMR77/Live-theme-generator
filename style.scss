@@ -1,3 +1,5 @@
+$--white: white;
+
 body{
     margin: 0;
     padding: 0;
@@ -8,14 +10,21 @@ body{
 
 h1{
     text-align: center;
+
 }
+
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 700;
+}
+
+input{
+    border: solid $--whites ;
+    border-radius: 5px;
+}
+
 
 .line{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.counteiner-convencional{
-   
+    padding-top: 200px;
 }

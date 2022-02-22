@@ -10,14 +10,14 @@ h1 {
   text-align: center;
 }
 
-.line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 700;
+}
+
+input {
+  border: solid white;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
